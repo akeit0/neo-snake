@@ -1,0 +1,93 @@
+.balance-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+.balance-fields label,
+.debug-controls label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+}
+.balance-fields input,
+.debug-controls input {
+  width: 90px;
+  min-width: 0;
+  padding: 7px;
+  border: 1px solid var(--ink);
+  font: 14px monospace;
+  background: white;
+  color: var(--ink);
+}
+.file-button {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.file-button input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.file-button:focus-within {
+  outline: 3px solid #7051d6;
+  outline-offset: 3px;
+}
+.debug-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px dashed #a6a0b1;
+  padding-top: 12px;
+}
+
+.balance-group {
+  margin: 9px 0;
+  border: 1px solid #b5b1c1;
+  padding: 10px;
+}
+.balance-group summary {
+  font-size: 12px;
+}
+.settings-modal {
+  max-width: 720px;
+}
+.file-button,
+.debug-controls button {
+  padding: 9px 12px;
+  font-size: 11px;
+  background: var(--lime);
+  border: 2px solid var(--ink);
+}
+@media (max-width: 760px) {
+  .balance-fields,
+  .debug-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fx-preview .header-right > :not(#language) {
+  display: none;
+}
+.fx-preview #previewScene {
+  max-width: 160px;
+  font: 700 11px inherit;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 28px;
+}
+@media (max-width: 480px) {
+  .fx-preview #previewScene {
+    max-width: 135px;
+    font-size: 10px;
+  }
+  .fx-preview .game-top > span {
+    font-size: 8px;
+  }
+}

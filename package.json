@@ -1,0 +1,15 @@
+{
+  "name": "neo-snake",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A snake roguelite for mobile and desktop",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build": "node scripts/build.cjs",
+    "build:dev": "node scripts/build.cjs --dev"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "CC0-1.0"
+}
